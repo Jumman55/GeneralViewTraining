@@ -16,4 +16,4 @@ Sign Up page view, Tab Bar view, add icon, add launch screen .......
 ---
 # © License  & Copyright 
 
-License under the [MIT LICENSE](LICENSE)
+License under the [MIT License](LICENSE)
