@@ -2,19 +2,18 @@
 //  ViewRouter.swift
 //  GeneralViewTraining
 //
-//  Created by Jumman Hossen on 29/12/21.
+//  Created by Jumman Hossen on 31/12/21.
 //
 
 import SwiftUI
 
-struct ViewRouter: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
+class ViewRouter: ObservableObject{
+    @Published var  currentPage: Page = .homePage
 }
 
-struct ViewRouter_Previews: PreviewProvider {
-    static var previews: some View {
-        ViewRouter()
-    }
+
+enum Page {
+    case homePage
+    case signInPage
+    case signUpPage
 }
