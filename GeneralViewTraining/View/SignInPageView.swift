@@ -10,6 +10,9 @@ import SwiftUI
 struct SignInPageView: View {
     //MARK: -PROPERTIES
     
+    @EnvironmentObject var viewRouter: ViewRouter
+    @State var email = ""
+    @State var password = ""
     
     //MARK: -BODY
     var body: some View {
@@ -23,7 +26,9 @@ struct SignInPageView: View {
                 
                 Spacer()
                 //This area for user data as form email and password
+                SignInFields(email: $email, password: $password)
                 
+            
                 Spacer()
                 //SignIn button to move into another view
                 Button(action: {
@@ -35,7 +40,18 @@ struct SignInPageView: View {
                 
                 Spacer()
                 //navigation to sign up page
-                
+                HStack{
+                    Text("Don't have an account?")
+                    Button(action:{
+                        viewRouter.currentPage = .signUpPage
+                    }){
+                        Text("Sign Up")
+                            .foregroundColor(lemonYellow)   //this color from constant
+                            .fontWeight(.heavy)
+                            .font(.headline)
+                    }
+                }
+                .opacity(0.9)
                 
             }//: VStack
         }//: ZStack
@@ -47,5 +63,27 @@ struct SignInPageView: View {
 struct SignInPageView_Previews: PreviewProvider {
     static var previews: some View {
         SignInPageView()
+    }
+}
+
+//MARK: -CHILDVIEW
+
+struct SignInFields: View {
+    @Binding var email: String
+    @Binding var password: String
+    var body: some View{
+        Group{
+            TextField("Email", text: $email)
+                .padding()
+                .background(Color(UIColor.systemGray6))
+                .cornerRadius(10)
+                .textInputAutocapitalization(.never)
+            SecureField("Password", text: $password)
+                .padding()
+                .background(Color(UIColor.systemGray6))
+                .cornerRadius(10)
+            
+        }//: Group
+        
     }
 }
