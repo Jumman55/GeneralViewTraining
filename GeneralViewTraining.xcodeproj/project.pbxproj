@@ -16,6 +16,8 @@
 		A74E1923277CFC4300025890 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74E1922277CFC4300025890 /* TabBarView.swift */; };
 		A74E1925277CFC6A00025890 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74E1924277CFC6A00025890 /* HomeView.swift */; };
 		A7587985277E8B9F007DCB1B /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7587984277E8B9F007DCB1B /* ViewRouter.swift */; };
+		A7587987277E8D0F007DCB1B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7587986277E8D0F007DCB1B /* Constants.swift */; };
+		A7587989277E99B8007DCB1B /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7587988277E99B8007DCB1B /* ButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		A74E1922277CFC4300025890 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		A74E1924277CFC6A00025890 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		A7587984277E8B9F007DCB1B /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
+		A7587986277E8D0F007DCB1B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A7587988277E99B8007DCB1B /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +114,8 @@
 		A74E1928277CFCBA00025890 /* Style */ = {
 			isa = PBXGroup;
 			children = (
+				A7587986277E8D0F007DCB1B /* Constants.swift */,
+				A7587988277E99B8007DCB1B /* ButtonView.swift */,
 			);
 			path = Style;
 			sourceTree = "<group>";
@@ -191,6 +197,8 @@
 				A74E1925277CFC6A00025890 /* HomeView.swift in Sources */,
 				A74E1923277CFC4300025890 /* TabBarView.swift in Sources */,
 				A74E191F277CFBE800025890 /* SignInPageView.swift in Sources */,
+				A7587987277E8D0F007DCB1B /* Constants.swift in Sources */,
+				A7587989277E99B8007DCB1B /* ButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
