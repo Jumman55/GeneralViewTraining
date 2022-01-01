@@ -18,6 +18,8 @@
 		A7587985277E8B9F007DCB1B /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7587984277E8B9F007DCB1B /* ViewRouter.swift */; };
 		A7587987277E8D0F007DCB1B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7587986277E8D0F007DCB1B /* Constants.swift */; };
 		A7587989277E99B8007DCB1B /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7587988277E99B8007DCB1B /* ButtonView.swift */; };
+		A758798C2780F0CF007DCB1B /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A758798A2780F0CF007DCB1B /* DataModel.xcdatamodeld */; };
+		A758798E2780F149007DCB1B /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A758798D2780F149007DCB1B /* PersistenceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		A7587984277E8B9F007DCB1B /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
 		A7587986277E8D0F007DCB1B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A7587988277E99B8007DCB1B /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		A758798B2780F0CF007DCB1B /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		A758798D2780F149007DCB1B /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +74,7 @@
 				A74E191B277CFB7000025890 /* View */,
 				A74E1928277CFCBA00025890 /* Style */,
 				A74E1911277CF61600025890 /* Assets.xcassets */,
+				A758798A2780F0CF007DCB1B /* DataModel.xcdatamodeld */,
 				A74E1913277CF61600025890 /* Preview Content */,
 			);
 			path = GeneralViewTraining;
@@ -99,6 +104,7 @@
 			children = (
 				A74E190F277CF61500025890 /* ContentView.swift */,
 				A7587984277E8B9F007DCB1B /* ViewRouter.swift */,
+				A758798D2780F149007DCB1B /* PersistenceController.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -191,8 +197,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A74E1910277CF61500025890 /* ContentView.swift in Sources */,
+				A758798C2780F0CF007DCB1B /* DataModel.xcdatamodeld in Sources */,
 				A7587985277E8B9F007DCB1B /* ViewRouter.swift in Sources */,
 				A74E1921277CFC1B00025890 /* SignUpPageView.swift in Sources */,
+				A758798E2780F149007DCB1B /* PersistenceController.swift in Sources */,
 				A74E190E277CF61500025890 /* GeneralViewTrainingApp.swift in Sources */,
 				A74E1925277CFC6A00025890 /* HomeView.swift in Sources */,
 				A74E1923277CFC4300025890 /* TabBarView.swift in Sources */,
@@ -401,6 +409,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A758798A2780F0CF007DCB1B /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A758798B2780F0CF007DCB1B /* DataModel.xcdatamodel */,
+			);
+			currentVersion = A758798B2780F0CF007DCB1B /* DataModel.xcdatamodel */;
+			path = DataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = A74E1902277CF61500025890 /* Project object */;
 }
