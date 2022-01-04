@@ -15,12 +15,16 @@
 		A74E1921277CFC1B00025890 /* SignUpPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74E1920277CFC1B00025890 /* SignUpPageView.swift */; };
 		A74E1923277CFC4300025890 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74E1922277CFC4300025890 /* TabBarView.swift */; };
 		A74E1925277CFC6A00025890 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74E1924277CFC6A00025890 /* HomeView.swift */; };
+		A74EF3BB2784F1A200878FE5 /* RealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74EF3BA2784F1A200878FE5 /* RealmModel.swift */; };
+		A74EF3BE2784F1C400878FE5 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74EF3BD2784F1C400878FE5 /* DataModel.swift */; };
 		A7587985277E8B9F007DCB1B /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7587984277E8B9F007DCB1B /* ViewRouter.swift */; };
 		A7587987277E8D0F007DCB1B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7587986277E8D0F007DCB1B /* Constants.swift */; };
 		A7587989277E99B8007DCB1B /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7587988277E99B8007DCB1B /* ButtonView.swift */; };
+		D081099C4941FBE631EB2472 /* Pods_GeneralViewTraining.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBB7FF96547279CBC9F2EDFF /* Pods_GeneralViewTraining.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7EF737D70C2F17CEA5B73B6B /* Pods-GeneralViewTraining.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeneralViewTraining.release.xcconfig"; path = "Target Support Files/Pods-GeneralViewTraining/Pods-GeneralViewTraining.release.xcconfig"; sourceTree = "<group>"; };
 		A74E190A277CF61500025890 /* GeneralViewTraining.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeneralViewTraining.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A74E190D277CF61500025890 /* GeneralViewTrainingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralViewTrainingApp.swift; sourceTree = "<group>"; };
 		A74E190F277CF61500025890 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -30,9 +34,13 @@
 		A74E1920277CFC1B00025890 /* SignUpPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPageView.swift; sourceTree = "<group>"; };
 		A74E1922277CFC4300025890 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		A74E1924277CFC6A00025890 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		A74EF3BA2784F1A200878FE5 /* RealmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmModel.swift; sourceTree = "<group>"; };
+		A74EF3BD2784F1C400878FE5 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		A7587984277E8B9F007DCB1B /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
 		A7587986277E8D0F007DCB1B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A7587988277E99B8007DCB1B /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		BBB7FF96547279CBC9F2EDFF /* Pods_GeneralViewTraining.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeneralViewTraining.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA6A1541F538A9AFF3B58167 /* Pods-GeneralViewTraining.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeneralViewTraining.debug.xcconfig"; path = "Target Support Files/Pods-GeneralViewTraining/Pods-GeneralViewTraining.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,17 +48,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D081099C4941FBE631EB2472 /* Pods_GeneralViewTraining.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		77EDE668D40CD8E9BAC0D092 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CA6A1541F538A9AFF3B58167 /* Pods-GeneralViewTraining.debug.xcconfig */,
+				7EF737D70C2F17CEA5B73B6B /* Pods-GeneralViewTraining.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		905D31B21691846F3AF89DA2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BBB7FF96547279CBC9F2EDFF /* Pods_GeneralViewTraining.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A74E1901277CF61500025890 = {
 			isa = PBXGroup;
 			children = (
 				A74E190C277CF61500025890 /* GeneralViewTraining */,
 				A74E190B277CF61500025890 /* Products */,
+				77EDE668D40CD8E9BAC0D092 /* Pods */,
+				905D31B21691846F3AF89DA2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,6 +135,8 @@
 			isa = PBXGroup;
 			children = (
 				A74E190D277CF61500025890 /* GeneralViewTrainingApp.swift */,
+				A74EF3BA2784F1A200878FE5 /* RealmModel.swift */,
+				A74EF3BD2784F1C400878FE5 /* DataModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -127,9 +157,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A74E1918277CF61600025890 /* Build configuration list for PBXNativeTarget "GeneralViewTraining" */;
 			buildPhases = (
+				B7BD5B55966F42A8333309F4 /* [CP] Check Pods Manifest.lock */,
 				A74E1906277CF61500025890 /* Sources */,
 				A74E1907277CF61500025890 /* Frameworks */,
 				A74E1908277CF61500025890 /* Resources */,
+				BF0806E6CD8E5165061FAC31 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -185,6 +217,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B7BD5B55966F42A8333309F4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GeneralViewTraining-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF0806E6CD8E5165061FAC31 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GeneralViewTraining/Pods-GeneralViewTraining-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GeneralViewTraining/Pods-GeneralViewTraining-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GeneralViewTraining/Pods-GeneralViewTraining-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A74E1906277CF61500025890 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -192,7 +266,9 @@
 			files = (
 				A74E1910277CF61500025890 /* ContentView.swift in Sources */,
 				A7587985277E8B9F007DCB1B /* ViewRouter.swift in Sources */,
+				A74EF3BE2784F1C400878FE5 /* DataModel.swift in Sources */,
 				A74E1921277CFC1B00025890 /* SignUpPageView.swift in Sources */,
+				A74EF3BB2784F1A200878FE5 /* RealmModel.swift in Sources */,
 				A74E190E277CF61500025890 /* GeneralViewTrainingApp.swift in Sources */,
 				A74E1925277CFC6A00025890 /* HomeView.swift in Sources */,
 				A74E1923277CFC4300025890 /* TabBarView.swift in Sources */,
@@ -323,6 +399,7 @@
 		};
 		A74E1919277CF61600025890 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA6A1541F538A9AFF3B58167 /* Pods-GeneralViewTraining.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -352,6 +429,7 @@
 		};
 		A74E191A277CF61600025890 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EF737D70C2F17CEA5B73B6B /* Pods-GeneralViewTraining.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

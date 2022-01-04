@@ -6,12 +6,19 @@
 //
 
 import SwiftUI
+//import RealmSwift
 
 @main
 struct GeneralViewTrainingApp: App {
+    //MARK: - PROPERTIES
+    
+    
+    //MARK: -BODY
     var body: some Scene {
         WindowGroup {
             ContentView()
         }
     }
 }
+ 
+

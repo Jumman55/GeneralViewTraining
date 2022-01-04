@@ -6,9 +6,19 @@
 //
 
 import SwiftUI
+import RealmSwift
 
 struct ContentView: View {
+    init(){
+        let data = Data()
+        let realm = try! Realm()
+        print(Realm.Configuration.defaultConfiguration.fileURL!)
+        try? realm.write{
+            realm.add(data)
+        }
+    }
     var body: some View {
+        
         Text("Hello, world!")
             .padding()
     }
