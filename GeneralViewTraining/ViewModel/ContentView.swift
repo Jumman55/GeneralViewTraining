@@ -10,12 +10,12 @@ import RealmSwift
 
 struct ContentView: View {
     init(){
-        let data = Data()
-        let realm = try! Realm()
-        print(Realm.Configuration.defaultConfiguration.fileURL!)
-        try? realm.write{
-            realm.add(data)
-        }
+        do{
+            let realm = try Realm()
+        
+        } catch{
+            print("Error initialising new realm, \(error)")
+        } 
     }
     var body: some View {
         

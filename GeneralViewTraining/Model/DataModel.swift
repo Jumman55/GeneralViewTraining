@@ -8,7 +8,16 @@
 import Foundation
 import RealmSwift
 
-class Data: Object {
-   @objc dynamic var name: String = ""
-   @objc dynamic var age: Int = 0
+
+
+class Item: Object {
+    @objc dynamic var task: String = ""
+    @objc dynamic var complete: Bool = false
+    var parentCategory = LinkingObjects(fromType: Category.self, property: "items")
+}
+
+
+class Category: Object{
+    @objc dynamic var name: String = ""
+    let items = List<Item>()
 }
