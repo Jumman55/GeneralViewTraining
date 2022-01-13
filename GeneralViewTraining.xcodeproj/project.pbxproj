@@ -11,6 +11,9 @@
 		A745584D279028C400AD7446 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A745584C279028C400AD7446 /* RealmSwift */; };
 		A74558502790295B00AD7446 /* RealmDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A745584F2790295B00AD7446 /* RealmDataManager.swift */; };
 		A745585227902C1600AD7446 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = A745585127902C1600AD7446 /* Task.swift */; };
+		A745585427904B8800AD7446 /* TaskRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A745585327904B8800AD7446 /* TaskRow.swift */; };
+		A745585627904CD700AD7446 /* AddTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A745585527904CD700AD7446 /* AddTaskView.swift */; };
+		A74558582790509E00AD7446 /* SmallAddButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74558572790509E00AD7446 /* SmallAddButton.swift */; };
 		A74E190E277CF61500025890 /* GeneralViewTrainingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74E190D277CF61500025890 /* GeneralViewTrainingApp.swift */; };
 		A74E1910277CF61500025890 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74E190F277CF61500025890 /* ContentView.swift */; };
 		A74E1912277CF61600025890 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A74E1911277CF61600025890 /* Assets.xcassets */; };
@@ -27,6 +30,9 @@
 /* Begin PBXFileReference section */
 		A745584F2790295B00AD7446 /* RealmDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDataManager.swift; sourceTree = "<group>"; };
 		A745585127902C1600AD7446 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		A745585327904B8800AD7446 /* TaskRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRow.swift; sourceTree = "<group>"; };
+		A745585527904CD700AD7446 /* AddTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskView.swift; sourceTree = "<group>"; };
+		A74558572790509E00AD7446 /* SmallAddButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallAddButton.swift; sourceTree = "<group>"; };
 		A74E190A277CF61500025890 /* GeneralViewTraining.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeneralViewTraining.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A74E190D277CF61500025890 /* GeneralViewTrainingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralViewTrainingApp.swift; sourceTree = "<group>"; };
 		A74E190F277CF61500025890 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -108,6 +114,7 @@
 				A74E1920277CFC1B00025890 /* SignUpPageView.swift */,
 				A74E1922277CFC4300025890 /* TabBarView.swift */,
 				A74E1924277CFC6A00025890 /* HomeView.swift */,
+				A745585527904CD700AD7446 /* AddTaskView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -117,6 +124,7 @@
 			children = (
 				A74E190F277CF61500025890 /* ContentView.swift */,
 				A7587984277E8B9F007DCB1B /* ViewRouter.swift */,
+				A745585327904B8800AD7446 /* TaskRow.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -134,6 +142,7 @@
 			children = (
 				A7587986277E8D0F007DCB1B /* Constants.swift */,
 				A7587988277E99B8007DCB1B /* ButtonView.swift */,
+				A74558572790509E00AD7446 /* SmallAddButton.swift */,
 			);
 			path = Style;
 			sourceTree = "<group>";
@@ -218,6 +227,7 @@
 				A74E1910277CF61500025890 /* ContentView.swift in Sources */,
 				A7587985277E8B9F007DCB1B /* ViewRouter.swift in Sources */,
 				A74E1921277CFC1B00025890 /* SignUpPageView.swift in Sources */,
+				A745585427904B8800AD7446 /* TaskRow.swift in Sources */,
 				A74E190E277CF61500025890 /* GeneralViewTrainingApp.swift in Sources */,
 				A745585227902C1600AD7446 /* Task.swift in Sources */,
 				A74E1925277CFC6A00025890 /* HomeView.swift in Sources */,
@@ -225,7 +235,9 @@
 				A74E191F277CFBE800025890 /* SignInPageView.swift in Sources */,
 				A7587987277E8D0F007DCB1B /* Constants.swift in Sources */,
 				A7587989277E99B8007DCB1B /* ButtonView.swift in Sources */,
+				A74558582790509E00AD7446 /* SmallAddButton.swift in Sources */,
 				A74558502790295B00AD7446 /* RealmDataManager.swift in Sources */,
+				A745585627904CD700AD7446 /* AddTaskView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

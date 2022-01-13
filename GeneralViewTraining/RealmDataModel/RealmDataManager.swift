@@ -89,6 +89,6 @@ class RealmDataManager: ObservableObject{
                 print("Error deleting task \(id) from Realm: \(error)")
             }
         }
-    }//: deleteTask
+    }//: deleteTask 
     
 }//: Class-RealmDataManager
