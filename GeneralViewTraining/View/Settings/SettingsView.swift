@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  SettingsView.swift
 //  GeneralViewTraining
 //
 //  Created by Jumman Hossen on 13/01/22.
@@ -7,14 +7,14 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct SettingsView: View {
     var body: some View {
-        TabBarView()
+        Text("settings")
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct SettingsView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        SettingsView()
     }
 }

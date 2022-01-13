@@ -14,14 +14,18 @@
 		A745585427904B8800AD7446 /* TaskRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A745585327904B8800AD7446 /* TaskRow.swift */; };
 		A745585627904CD700AD7446 /* AddTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A745585527904CD700AD7446 /* AddTaskView.swift */; };
 		A74558582790509E00AD7446 /* SmallAddButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74558572790509E00AD7446 /* SmallAddButton.swift */; };
+		A745585E2790C41000AD7446 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A745585D2790C41000AD7446 /* ContentView.swift */; };
+		A74558602790C47300AD7446 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A745585F2790C47300AD7446 /* HistoryView.swift */; };
+		A74558622790C4AD00AD7446 /* RecordsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74558612790C4AD00AD7446 /* RecordsView.swift */; };
+		A74558642790C4D100AD7446 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74558632790C4D100AD7446 /* SettingsView.swift */; };
 		A74E190E277CF61500025890 /* GeneralViewTrainingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74E190D277CF61500025890 /* GeneralViewTrainingApp.swift */; };
-		A74E1910277CF61500025890 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74E190F277CF61500025890 /* ContentView.swift */; };
+		A74E1910277CF61500025890 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74E190F277CF61500025890 /* HomeView.swift */; };
 		A74E1912277CF61600025890 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A74E1911277CF61600025890 /* Assets.xcassets */; };
 		A74E1915277CF61600025890 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A74E1914277CF61600025890 /* Preview Assets.xcassets */; };
 		A74E191F277CFBE800025890 /* SignInPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74E191E277CFBE800025890 /* SignInPageView.swift */; };
 		A74E1921277CFC1B00025890 /* SignUpPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74E1920277CFC1B00025890 /* SignUpPageView.swift */; };
 		A74E1923277CFC4300025890 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74E1922277CFC4300025890 /* TabBarView.swift */; };
-		A74E1925277CFC6A00025890 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74E1924277CFC6A00025890 /* HomeView.swift */; };
+		A74E1925277CFC6A00025890 /* MyTasksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74E1924277CFC6A00025890 /* MyTasksView.swift */; };
 		A7587985277E8B9F007DCB1B /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7587984277E8B9F007DCB1B /* ViewRouter.swift */; };
 		A7587987277E8D0F007DCB1B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7587986277E8D0F007DCB1B /* Constants.swift */; };
 		A7587989277E99B8007DCB1B /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7587988277E99B8007DCB1B /* ButtonView.swift */; };
@@ -33,15 +37,19 @@
 		A745585327904B8800AD7446 /* TaskRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRow.swift; sourceTree = "<group>"; };
 		A745585527904CD700AD7446 /* AddTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskView.swift; sourceTree = "<group>"; };
 		A74558572790509E00AD7446 /* SmallAddButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallAddButton.swift; sourceTree = "<group>"; };
+		A745585D2790C41000AD7446 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A745585F2790C47300AD7446 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		A74558612790C4AD00AD7446 /* RecordsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordsView.swift; sourceTree = "<group>"; };
+		A74558632790C4D100AD7446 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		A74E190A277CF61500025890 /* GeneralViewTraining.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeneralViewTraining.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A74E190D277CF61500025890 /* GeneralViewTrainingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralViewTrainingApp.swift; sourceTree = "<group>"; };
-		A74E190F277CF61500025890 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A74E190F277CF61500025890 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		A74E1911277CF61600025890 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A74E1914277CF61600025890 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A74E191E277CFBE800025890 /* SignInPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInPageView.swift; sourceTree = "<group>"; };
 		A74E1920277CFC1B00025890 /* SignUpPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPageView.swift; sourceTree = "<group>"; };
 		A74E1922277CFC4300025890 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
-		A74E1924277CFC6A00025890 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		A74E1924277CFC6A00025890 /* MyTasksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTasksView.swift; sourceTree = "<group>"; };
 		A7587984277E8B9F007DCB1B /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
 		A7587986277E8D0F007DCB1B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A7587988277E99B8007DCB1B /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
@@ -65,8 +73,45 @@
 			children = (
 				A745584F2790295B00AD7446 /* RealmDataManager.swift */,
 				A745585127902C1600AD7446 /* Task.swift */,
+				A745585327904B8800AD7446 /* TaskRow.swift */,
 			);
 			path = RealmDataModel;
+			sourceTree = "<group>";
+		};
+		A74558592790C25100AD7446 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				A74558632790C4D100AD7446 /* SettingsView.swift */,
+				A74E191E277CFBE800025890 /* SignInPageView.swift */,
+				A74E1920277CFC1B00025890 /* SignUpPageView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		A745585A2790C26700AD7446 /* Records */ = {
+			isa = PBXGroup;
+			children = (
+				A74558612790C4AD00AD7446 /* RecordsView.swift */,
+			);
+			path = Records;
+			sourceTree = "<group>";
+		};
+		A745585B2790C28500AD7446 /* History */ = {
+			isa = PBXGroup;
+			children = (
+				A745585F2790C47300AD7446 /* HistoryView.swift */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		A745585C2790C29200AD7446 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				A74E190F277CF61500025890 /* HomeView.swift */,
+				A74E1924277CFC6A00025890 /* MyTasksView.swift */,
+				A745585527904CD700AD7446 /* AddTaskView.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		A74E1901277CF61500025890 = {
@@ -110,11 +155,11 @@
 		A74E191B277CFB7000025890 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				A74E191E277CFBE800025890 /* SignInPageView.swift */,
-				A74E1920277CFC1B00025890 /* SignUpPageView.swift */,
+				A745585C2790C29200AD7446 /* Home */,
+				A745585B2790C28500AD7446 /* History */,
+				A745585A2790C26700AD7446 /* Records */,
+				A74558592790C25100AD7446 /* Settings */,
 				A74E1922277CFC4300025890 /* TabBarView.swift */,
-				A74E1924277CFC6A00025890 /* HomeView.swift */,
-				A745585527904CD700AD7446 /* AddTaskView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -122,9 +167,8 @@
 		A74E191C277CFB9000025890 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				A74E190F277CF61500025890 /* ContentView.swift */,
+				A745585D2790C41000AD7446 /* ContentView.swift */,
 				A7587984277E8B9F007DCB1B /* ViewRouter.swift */,
-				A745585327904B8800AD7446 /* TaskRow.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -224,19 +268,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A74E1910277CF61500025890 /* ContentView.swift in Sources */,
+				A74E1910277CF61500025890 /* HomeView.swift in Sources */,
 				A7587985277E8B9F007DCB1B /* ViewRouter.swift in Sources */,
 				A74E1921277CFC1B00025890 /* SignUpPageView.swift in Sources */,
+				A74558642790C4D100AD7446 /* SettingsView.swift in Sources */,
 				A745585427904B8800AD7446 /* TaskRow.swift in Sources */,
 				A74E190E277CF61500025890 /* GeneralViewTrainingApp.swift in Sources */,
 				A745585227902C1600AD7446 /* Task.swift in Sources */,
-				A74E1925277CFC6A00025890 /* HomeView.swift in Sources */,
+				A74E1925277CFC6A00025890 /* MyTasksView.swift in Sources */,
 				A74E1923277CFC4300025890 /* TabBarView.swift in Sources */,
 				A74E191F277CFBE800025890 /* SignInPageView.swift in Sources */,
+				A74558602790C47300AD7446 /* HistoryView.swift in Sources */,
 				A7587987277E8D0F007DCB1B /* Constants.swift in Sources */,
 				A7587989277E99B8007DCB1B /* ButtonView.swift in Sources */,
+				A745585E2790C41000AD7446 /* ContentView.swift in Sources */,
 				A74558582790509E00AD7446 /* SmallAddButton.swift in Sources */,
 				A74558502790295B00AD7446 /* RealmDataManager.swift in Sources */,
+				A74558622790C4AD00AD7446 /* RecordsView.swift in Sources */,
 				A745585627904CD700AD7446 /* AddTaskView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,7 +9,7 @@ import SwiftUI
 import RealmSwift
 import Network
 
-struct HomeView: View {
+struct MyTasksView: View {
     //MARK: - PROPERTIES
     @EnvironmentObject var realmDataManager: RealmDataManager
     
@@ -52,9 +52,9 @@ struct HomeView: View {
 }
 
 //MARK: - PREVIEW
-struct HomeView_Previews: PreviewProvider {
+struct MyTasksView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView()
+        MyTasksView()
             .environmentObject(RealmDataManager())
     }
 }

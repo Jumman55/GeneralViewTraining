@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  RecordsView.swift
 //  GeneralViewTraining
 //
 //  Created by Jumman Hossen on 13/01/22.
@@ -7,14 +7,14 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct RecordsView: View {
     var body: some View {
-        TabBarView()
+        Text("Records")
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct RecordsView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        RecordsView()
     }
 }
