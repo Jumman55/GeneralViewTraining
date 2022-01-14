@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct SmallAddButton: View {
+    //MARK: - PROPERTIES
+    
+    //MARK: -BODY
     var body: some View {
         ZStack{
             Circle()
@@ -22,6 +25,7 @@ struct SmallAddButton: View {
     }
 }
 
+//MARK: -PREVIEW
 struct SmallAddButton_Previews: PreviewProvider {
     static var previews: some View {
         SmallAddButton()

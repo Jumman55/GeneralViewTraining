@@ -41,6 +41,7 @@ struct AddTaskView: View {
         }//: VStack
         .padding(.top)
         .padding(.horizontal)
+        .background(backgroundGradiantForSheet)
         .background(backgroundGradiant)
          
     }

@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct TabBarView: View {
+    //MARK: - PROPERTIES
+    
+    //MARK: -BODY
     var body: some View {
         TabView{
             HomeView()
@@ -30,10 +33,12 @@ struct TabBarView: View {
                     Label("Settings", systemImage: "gear")
                 }
         }
+        .accentColor(Color("AccentColor"))
         
     }
 }
 
+//MARK: -PREVIEW
 struct TabBarView_Previews: PreviewProvider {
     static var previews: some View {
         TabBarView()

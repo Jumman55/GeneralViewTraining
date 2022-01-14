@@ -47,7 +47,10 @@ struct MyTasksView: View {
             }//: VStack
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background(backgroundGradiant)
-        
+//            .overlay(Image("homePageLogo")
+//                        .frame(width: 350, height: 350, alignment: .center)
+//                        .opacity(20)
+//            )
     }
 }
 

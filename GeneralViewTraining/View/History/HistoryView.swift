@@ -8,11 +8,20 @@
 import SwiftUI
 
 struct HistoryView: View {
+    //MARK: - PROPERTIES
+
+    
+    //MARK: -BODY
     var body: some View {
-        Text("History")
+        NavigationView{
+            Text("TODO")
+                .navigationTitle("History")
+        }//: NavigationView
+        .navigationViewStyle(.stack)
     }
 }
 
+//MARK: -PREVIEW
 struct HistoryView_Previews: PreviewProvider {
     static var previews: some View {
         HistoryView()

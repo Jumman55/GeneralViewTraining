@@ -8,11 +8,19 @@
 import SwiftUI
 
 struct RecordsView: View {
+    //MARK: - PROPERTIES
+    
+    //MARK: -BODY
     var body: some View {
-        Text("Records")
+        NavigationView{
+            Text("TODO")
+                .navigationTitle("Records")
+        }//: NavigationView
+        .navigationViewStyle(.stack)
     }
 }
 
+//MARK: -PREVIEW
 struct RecordsView_Previews: PreviewProvider {
     static var previews: some View {
         RecordsView()

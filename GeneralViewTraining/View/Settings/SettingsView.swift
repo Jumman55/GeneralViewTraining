@@ -8,11 +8,19 @@
 import SwiftUI
 
 struct SettingsView: View {
+    //MARK: - PROPERITES
+    
+    //MARK: - BODY
     var body: some View {
-        Text("settings")
+        NavigationView{
+            Text("TODO")
+                .navigationTitle("Settings")
+        }//: NavigationView
+        .navigationViewStyle(.stack)
     }
 }
 
+//MARK: -PREVIEW
 struct SettingsView_Previews: PreviewProvider {
     static var previews: some View {
         SettingsView()
