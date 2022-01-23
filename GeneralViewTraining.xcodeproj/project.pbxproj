@@ -19,6 +19,8 @@
 		A74558622790C4AD00AD7446 /* RecordsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74558612790C4AD00AD7446 /* RecordsView.swift */; };
 		A74558642790C4D100AD7446 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74558632790C4D100AD7446 /* SettingsView.swift */; };
 		A74558662790FCE000AD7446 /* CoustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74558652790FCE000AD7446 /* CoustomTabBar.swift */; };
+		A745586A27936EA000AD7446 /* FormRowStaticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A745586927936EA000AD7446 /* FormRowStaticView.swift */; };
+		A745586C2793762600AD7446 /* SettingsViewConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A745586B2793762600AD7446 /* SettingsViewConstants.swift */; };
 		A74E190E277CF61500025890 /* GeneralViewTrainingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74E190D277CF61500025890 /* GeneralViewTrainingApp.swift */; };
 		A74E1910277CF61500025890 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74E190F277CF61500025890 /* HomeView.swift */; };
 		A74E1912277CF61600025890 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A74E1911277CF61600025890 /* Assets.xcassets */; };
@@ -30,6 +32,7 @@
 		A7587985277E8B9F007DCB1B /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7587984277E8B9F007DCB1B /* ViewRouter.swift */; };
 		A7587987277E8D0F007DCB1B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7587986277E8D0F007DCB1B /* Constants.swift */; };
 		A7587989277E99B8007DCB1B /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7587988277E99B8007DCB1B /* ButtonView.swift */; };
+		A758A85D279DC63B008A01B3 /* AddTaskButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A758A85C279DC63B008A01B3 /* AddTaskButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +46,8 @@
 		A74558612790C4AD00AD7446 /* RecordsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordsView.swift; sourceTree = "<group>"; };
 		A74558632790C4D100AD7446 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		A74558652790FCE000AD7446 /* CoustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoustomTabBar.swift; sourceTree = "<group>"; };
+		A745586927936EA000AD7446 /* FormRowStaticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormRowStaticView.swift; sourceTree = "<group>"; };
+		A745586B2793762600AD7446 /* SettingsViewConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewConstants.swift; sourceTree = "<group>"; };
 		A74E190A277CF61500025890 /* GeneralViewTraining.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeneralViewTraining.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A74E190D277CF61500025890 /* GeneralViewTrainingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralViewTrainingApp.swift; sourceTree = "<group>"; };
 		A74E190F277CF61500025890 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -55,6 +60,7 @@
 		A7587984277E8B9F007DCB1B /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
 		A7587986277E8D0F007DCB1B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A7587988277E99B8007DCB1B /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		A758A85C279DC63B008A01B3 /* AddTaskButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +92,8 @@
 				A74558632790C4D100AD7446 /* SettingsView.swift */,
 				A74E191E277CFBE800025890 /* SignInPageView.swift */,
 				A74E1920277CFC1B00025890 /* SignUpPageView.swift */,
+				A745586927936EA000AD7446 /* FormRowStaticView.swift */,
+				A745586B2793762600AD7446 /* SettingsViewConstants.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -112,6 +120,7 @@
 				A74E190F277CF61500025890 /* HomeView.swift */,
 				A74E1924277CFC6A00025890 /* MyTasksView.swift */,
 				A745585527904CD700AD7446 /* AddTaskView.swift */,
+				A758A85C279DC63B008A01B3 /* AddTaskButton.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -272,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A74E1910277CF61500025890 /* HomeView.swift in Sources */,
+				A745586A27936EA000AD7446 /* FormRowStaticView.swift in Sources */,
 				A7587985277E8B9F007DCB1B /* ViewRouter.swift in Sources */,
 				A74E1921277CFC1B00025890 /* SignUpPageView.swift in Sources */,
 				A74558642790C4D100AD7446 /* SettingsView.swift in Sources */,
@@ -282,6 +292,7 @@
 				A74E1923277CFC4300025890 /* TabBarView.swift in Sources */,
 				A74E191F277CFBE800025890 /* SignInPageView.swift in Sources */,
 				A74558602790C47300AD7446 /* HistoryView.swift in Sources */,
+				A745586C2793762600AD7446 /* SettingsViewConstants.swift in Sources */,
 				A74558662790FCE000AD7446 /* CoustomTabBar.swift in Sources */,
 				A7587987277E8D0F007DCB1B /* Constants.swift in Sources */,
 				A7587989277E99B8007DCB1B /* ButtonView.swift in Sources */,
@@ -290,6 +301,7 @@
 				A74558502790295B00AD7446 /* RealmDataManager.swift in Sources */,
 				A74558622790C4AD00AD7446 /* RecordsView.swift in Sources */,
 				A745585627904CD700AD7446 /* AddTaskView.swift in Sources */,
+				A758A85D279DC63B008A01B3 /* AddTaskButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

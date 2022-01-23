@@ -30,12 +30,8 @@ struct AddTaskView: View {
                 }
                 dismiss( )
             } label: {
-                Text("Add task")
-                    .foregroundColor(.white)
-                    .padding()
-                    .padding(.horizontal)
-                    .background(.purple)
-                    .cornerRadius(30)
+                AddTaskButton()
+                    
             }
             Spacer()
         }//: VStack

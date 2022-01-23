@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Foundation
 
 struct SettingsView: View {
     //MARK: - PROPERITES
@@ -13,8 +14,36 @@ struct SettingsView: View {
     //MARK: - BODY
     var body: some View {
         NavigationView{
-            Text("TODO")
-                .navigationTitle("Settings")
+            VStack(alignment: .center, spacing: 0.0) {
+                //MARK: -FORM
+                Form {
+                    //MARK: - SECTION 0
+                    Section(header: Text("About the Application")){
+                        ForEach(0 ..< section0["Icon"]!.count) { index in
+                            FormRowStaticView(icon: section0["Icon"]![index], firstText: section0["FirstText"]![index], secondText: section0["SecondText"]![index])
+                        }
+                    }
+                    
+                }//:Form
+                .listStyle(GroupedListStyle())
+                .environment(\.horizontalSizeClass, .regular)
+                
+                //MARK: -FOOTER
+                Text("Copyright © All rights reserved. \nBetter Apps ♡ Less code")
+                    .font(.footnote)
+                    .multilineTextAlignment(.center)
+                    .padding(.top, 6)
+                    .padding(.bottom, 8)
+                    .foregroundColor(Color.secondary)
+                    
+                    
+                    
+                
+                
+                    
+            }//: VStack
+            .navigationBarTitle("Settings", displayMode:  .inline)
+            .background(Color("settingsBackground").edgesIgnoringSafeArea(.all))
         }//: NavigationView
         .navigationViewStyle(.stack)
     }
