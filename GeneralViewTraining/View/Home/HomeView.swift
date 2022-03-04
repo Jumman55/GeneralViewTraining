@@ -12,25 +12,40 @@ struct HomeView: View {
     //MARK: - PROPERTIES
     @StateObject var realmDataManager = RealmDataManager()
     @State private var showAddTaskView = false
-    
+    @State var searchText = ""
+   
+   var filteredTasks: [Task] {
+       if searchText.isEmpty{
+           return realmDataManager.tasks
+       }else{
+           return realmDataManager.tasks.filter{
+               $0.title.lowercased().contains(searchText.lowercased())}
+   }
+   }
     //MARK: -BODY
     var body: some View {
-        ZStack(alignment: .bottomTrailing){
-            MyTasksView()
-                .environmentObject(realmDataManager)
+        NavigationView {
+            ZStack(alignment: .bottomTrailing){
+                MyTasksView()
+                    .environmentObject(realmDataManager)
+                
+                SmallAddButton()
+                    .padding()
+                    .onTapGesture {
+                        showAddTaskView.toggle()
+                    }
+            }//: ZStack
+            .sheet(isPresented: $showAddTaskView){
+                AddTaskView()
+                    .environmentObject(realmDataManager)
+            }
+            .navigationBarTitle("My Tasks")
+            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottom)
+            .background(backgroundGradiant)
+            .searchable(text: $searchText)
             
-            SmallAddButton()
-                .padding()
-                .onTapGesture {
-                    showAddTaskView.toggle()
-                }
-        }//: ZStack
-        .sheet(isPresented: $showAddTaskView){
-            AddTaskView()
-                .environmentObject(realmDataManager)
-        }
-        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottom)
-        .background(backgroundGradiant)
+        }//: Navigation
+        
     }
 }
 //MARK: -PREVIEW

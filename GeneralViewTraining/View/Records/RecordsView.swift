@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+import AVFAudio
+
 
 struct RecordsView: View {
     //MARK: - PROPERTIES
@@ -17,6 +19,7 @@ struct RecordsView: View {
                 .navigationTitle("Records")
         }//: NavigationView
         .navigationViewStyle(.stack)
+        
     }
 }
 

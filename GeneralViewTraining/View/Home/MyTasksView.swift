@@ -12,41 +12,55 @@ import Network
 struct MyTasksView: View {
     //MARK: - PROPERTIES
     @EnvironmentObject var realmDataManager: RealmDataManager
+     @State var searchText = ""
     
+    var filteredTasks: [Task] {
+        if searchText.isEmpty{
+            return realmDataManager.tasks
+        }else{
+            return realmDataManager.tasks.filter{
+                $0.title.lowercased().contains(searchText.lowercased())}
+    }
+    }
     //MARK: -BODY
     var body: some View {
        
+        NavigationView {
             VStack{
-                Text("My taskes")
-                    .font(.title3).bold()
-                    .padding()
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                List{
-                    ForEach(realmDataManager.tasks, id: \.id){ task in
-                        if !task.isInvalidated{
-                            TaskRow(task: task.title, completed: task.completed)
-                                .onTapGesture {
-                                    realmDataManager.updateTask(id: task.id, completed: !task.completed)
-                                }
-                                .swipeActions(edge: .trailing){
-                                    Button(role: .destructive){
-                                        realmDataManager.deleteTask(id: task.id)
-                                    } label: {
-                                        Label("Delete", systemImage: "trash")
+//                    Text("My taskes")
+//                        .font(.title3).bold()
+//                        .padding()
+//                        .frame(maxWidth: .infinity, alignment: .leading)
+                    List{
+                        ForEach(filteredTasks, id: \.id){ task in
+                            if !task.isInvalidated{
+                                TaskRow(task: task.title, completed: task.completed)
+                                    .onTapGesture {
+                                        realmDataManager.updateTask(id: task.id, completed: !task.completed)
                                     }
-                                }
+                                    .swipeActions(edge: .trailing){
+                                        Button(role: .destructive){
+                                            realmDataManager.deleteTask(id: task.id)
+                                        } label: {
+                                            Label("Delete", systemImage: "trash")
+                                        }
+                                    }
+                            }
+                            
                         }
-                        
+                        .listRowSeparator(.hidden)
                     }
-                    .listRowSeparator(.hidden)
-                }
-                .onAppear{
-                    UITableView.appearance().backgroundColor = UIColor.clear
-                    UITableViewCell.appearance().backgroundColor = UIColor.clear
-                }
-            }//: VStack
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .background(backgroundGradiant)
+                    .onAppear{
+                        UITableView.appearance().backgroundColor = UIColor.clear
+                        UITableViewCell.appearance().backgroundColor = UIColor.clear
+                    }
+                }//: VStack
+                //.navigationBarTitle("My taskes")
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .background(backgroundGradiant)
+        }//: NavigationView
+        .searchable(text: $searchText, placement: .navigationBarDrawer)
+        
 //            .overlay(Image("homePageLogo")
 //                        .frame(width: 350, height: 350, alignment: .center)
 //                        .opacity(20)

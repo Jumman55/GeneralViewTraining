@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A711273F27D2A68B001BE107 /* PhotoInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A711273E27D2A68B001BE107 /* PhotoInfo.swift */; };
+		A711274127D2A884001BE107 /* PhotoInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A711274027D2A884001BE107 /* PhotoInfoController.swift */; };
+		A7231AEE279F24BA00E07FFF /* AudioRecording.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7231AED279F24BA00E07FFF /* AudioRecording.swift */; };
 		A745584B279028C400AD7446 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = A745584A279028C400AD7446 /* Realm */; };
 		A745584D279028C400AD7446 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A745584C279028C400AD7446 /* RealmSwift */; };
 		A74558502790295B00AD7446 /* RealmDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A745584F2790295B00AD7446 /* RealmDataManager.swift */; };
@@ -33,9 +36,15 @@
 		A7587987277E8D0F007DCB1B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7587986277E8D0F007DCB1B /* Constants.swift */; };
 		A7587989277E99B8007DCB1B /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7587988277E99B8007DCB1B /* ButtonView.swift */; };
 		A758A85D279DC63B008A01B3 /* AddTaskButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A758A85C279DC63B008A01B3 /* AddTaskButton.swift */; };
+		A7BFEA1427ABD92500752935 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BFEA1327ABD92500752935 /* Network.swift */; };
+		A7BFEA1627ABD98000752935 /* UserDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BFEA1527ABD98000752935 /* UserDataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A711273E27D2A68B001BE107 /* PhotoInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoInfo.swift; sourceTree = "<group>"; };
+		A711274027D2A884001BE107 /* PhotoInfoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoInfoController.swift; sourceTree = "<group>"; };
+		A7231AEC279F0CDB00E07FFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7231AED279F24BA00E07FFF /* AudioRecording.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecording.swift; sourceTree = "<group>"; };
 		A745584F2790295B00AD7446 /* RealmDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDataManager.swift; sourceTree = "<group>"; };
 		A745585127902C1600AD7446 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		A745585327904B8800AD7446 /* TaskRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRow.swift; sourceTree = "<group>"; };
@@ -61,6 +70,8 @@
 		A7587986277E8D0F007DCB1B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A7587988277E99B8007DCB1B /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		A758A85C279DC63B008A01B3 /* AddTaskButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskButton.swift; sourceTree = "<group>"; };
+		A7BFEA1327ABD92500752935 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		A7BFEA1527ABD98000752935 /* UserDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +113,9 @@
 			isa = PBXGroup;
 			children = (
 				A74558612790C4AD00AD7446 /* RecordsView.swift */,
+				A7231AED279F24BA00E07FFF /* AudioRecording.swift */,
+				A711273E27D2A68B001BE107 /* PhotoInfo.swift */,
+				A711274027D2A884001BE107 /* PhotoInfoController.swift */,
 			);
 			path = Records;
 			sourceTree = "<group>";
@@ -110,6 +124,8 @@
 			isa = PBXGroup;
 			children = (
 				A745585F2790C47300AD7446 /* HistoryView.swift */,
+				A7BFEA1327ABD92500752935 /* Network.swift */,
+				A7BFEA1527ABD98000752935 /* UserDataModel.swift */,
 			);
 			path = History;
 			sourceTree = "<group>";
@@ -144,6 +160,7 @@
 		A74E190C277CF61500025890 /* GeneralViewTraining */ = {
 			isa = PBXGroup;
 			children = (
+				A7231AEC279F0CDB00E07FFF /* Info.plist */,
 				A74E191D277CFBB800025890 /* Model */,
 				A74E191C277CFB9000025890 /* ViewModel */,
 				A74E191B277CFB7000025890 /* View */,
@@ -282,7 +299,10 @@
 			files = (
 				A74E1910277CF61500025890 /* HomeView.swift in Sources */,
 				A745586A27936EA000AD7446 /* FormRowStaticView.swift in Sources */,
+				A7BFEA1427ABD92500752935 /* Network.swift in Sources */,
 				A7587985277E8B9F007DCB1B /* ViewRouter.swift in Sources */,
+				A711273F27D2A68B001BE107 /* PhotoInfo.swift in Sources */,
+				A711274127D2A884001BE107 /* PhotoInfoController.swift in Sources */,
 				A74E1921277CFC1B00025890 /* SignUpPageView.swift in Sources */,
 				A74558642790C4D100AD7446 /* SettingsView.swift in Sources */,
 				A745585427904B8800AD7446 /* TaskRow.swift in Sources */,
@@ -301,7 +321,9 @@
 				A74558502790295B00AD7446 /* RealmDataManager.swift in Sources */,
 				A74558622790C4AD00AD7446 /* RecordsView.swift in Sources */,
 				A745585627904CD700AD7446 /* AddTaskView.swift in Sources */,
+				A7BFEA1627ABD98000752935 /* UserDataModel.swift in Sources */,
 				A758A85D279DC63B008A01B3 /* AddTaskButton.swift in Sources */,
+				A7231AEE279F24BA00E07FFF /* AudioRecording.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +457,7 @@
 				DEVELOPMENT_TEAM = TL6Q43TK9R;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GeneralViewTraining/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -465,6 +488,7 @@
 				DEVELOPMENT_TEAM = TL6Q43TK9R;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GeneralViewTraining/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
